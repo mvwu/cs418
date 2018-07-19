@@ -483,87 +483,7 @@ function animate() {
                         count++;
                     }
                 }
-                /*if(triangleVertices[i+1] <= 0 && count % 2 == 0){
-                    triangleVertices[i] = triangleVertices[i] +0.1;
-                    triangleVertices[i+3] = triangleVertices[i+3] +0.1;
-                    triangleVertices[i+6] = triangleVertices[i+6] +0.1;
-                    count++;
-                    i++;
-                    i++;
-                    i++;
-                } else if(triangleVertices[i+1] <= 0 && count % 2 == 1){
-                    triangleVertices[i] = triangleVertices[i] -0.1;
-                    triangleVertices[i+3] = triangleVertices[i+3] -0.1;
-                    triangleVertices[i+6] = triangleVertices[i+6] -0.1;
-                    count++;
-                    i++;
-                    i++;
-                    i++; 
-                } else if(triangleVertices[i+1] <= 0 && count % 10 == 2){
-                    triangleVertices[i] = triangleVertices[i] +0.1;
-                    triangleVertices[i+3] = triangleVertices[i+3] +0.1;
-                    triangleVertices[i+6] = triangleVertices[i+6] +0.1;
-                    count++;
-                    i++;
-                    i++;
-                    i++;
-                } else if(triangleVertices[i+1] <= 0 && count % 10 == 3){
-                    triangleVertices[i] = triangleVertices[i] -0.1;
-                    triangleVertices[i+3] = triangleVertices[i+3] -0.1;
-                    triangleVertices[i+6] = triangleVertices[i+6] -0.1;
-                    count++;
-                    i++;
-                    i++;
-                    i++;
-                } else if(triangleVertices[i+1] <= 0 && count % 10 == 4){
-                    triangleVertices[i] = triangleVertices[i] +0.1;
-                    triangleVertices[i+3] = triangleVertices[i+3] +0.1;
-                    triangleVertices[i+6] = triangleVertices[i+6] +0.1;
-                    count++;
-                    i++;
-                    i++;
-                    i++;
-                } else if(triangleVertices[i+1] <= 0 && count % 10 == 5){
-                    triangleVertices[i] = triangleVertices[i] -0.1;
-                    triangleVertices[i+3] = triangleVertices[i+3] -0.1;
-                    triangleVertices[i+6] = triangleVertices[i+6] -0.1;
-                    count++;
-                    i++;
-                    i++;
-                    i++;
-                } else if(triangleVertices[i+1] <= 0 && count % 10 == 6){
-                    triangleVertices[i] = triangleVertices[i] +0.1;
-                    triangleVertices[i+3] = triangleVertices[i+3] +0.1;
-                    triangleVertices[i+6] = triangleVertices[i+6] +0.1;
-                    count++;
-                    i++;
-                    i++;
-                    i++;
-                } else if(triangleVertices[i+1] <= 0 && count % 10 == 7){
-                    triangleVertices[i] = triangleVertices[i] -0.1;
-                    triangleVertices[i+3] = triangleVertices[i+3] -0.1;
-                    triangleVertices[i+6] = triangleVertices[i+6] -0.1;
-                    count++;
-                    i++;
-                    i++;
-                    i++;
-                } else if(triangleVertices[i+1] <= 0 && count % 10 == 8){
-                    triangleVertices[i] = triangleVertices[i] +0.1;
-                    triangleVertices[i+3] = triangleVertices[i+3] +0.1;
-                    triangleVertices[i+6] = triangleVertices[i+6] +0.1;
-                    count++;
-                    i++;
-                    i++;
-                    i++;
-                } else if(triangleVertices[i+1] <= 0 && count % 10 == 9){
-                    triangleVertices[i] = triangleVertices[i] -0.1;
-                    triangleVertices[i+3] = triangleVertices[i+3] -0.1;
-                    triangleVertices[i+6] = triangleVertices[i+6] -0.1;
-                    count++;
-                    i++;
-                    i++;
-                    i++;
-                } */
+                
                 i++;
                 i++;
             }
@@ -597,18 +517,3 @@ function tick() {
     draw();
     animate();
 }
-
-/**
-* Calculate the deformity for a given vertex in the figure
-@param {number} x coordinate of triangle boundary point
-@param {number} y coordinate of triangle boundary point
-@param {number} angle around the triangle of the boundary point
-@return {object} a deformation vector to be applied to the boundary point
-
-function deformSin(x,y,angle){
-    var circPt = vec2.fromValues(x,y);
-    var dist = 0.2*Math.sin((angle) + degToRad(defAngle));
-    vec2.normalize(circPt, circPt);
-    vec2.scale(circPt, circPt, dist);
-    return circPt;
-} */
